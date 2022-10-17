@@ -6,6 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico"> 
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+    <style> /*Internal CSS Styling*/
+        * {
+            background-color: lightblue;
+        }
+    </style>
   </head>
 
   <body>
@@ -24,21 +31,25 @@
 
         <div class="date-of-meeting"> 
             <h2>Date of Meeting:</h2>
-            <span><i> 10/5/2022 </i></span>
-            <span>(Wednesday)</span>
+            <span style="background-color: rgb(21, 93, 156);"> 10/5/2022 </span>
+            <span style = "color:yellow; border:3px solid green; border-radius: 5px; background-color:rgb(47, 168, 168); width:120px; text-align:center; margin-left: auto; margin-right:auto;">
+                Wednesday
+            </span>
         </div>
 
+        <div class="section-box">
         <nav>
-            <ul>
-                <li><a href="#attendance">Attendance</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#discussion">Discussion</a></li>
-                <li><a href="#queries">Queries</a></li>
-                <li><a href="#diagrams">Diagrams</a></li>
-                <li><a href="#recordings">Recordings</a></li>
-                <li><a href="#summary">Summary(TL;DR)</a></li>
+            <ul class="section-links">
+                <li><a href="#attendance">ATTENDANCE</a></li>
+                <li><a href="#agenda">AGENDA</a></li>
+                <li><a href="#discussion">DISCUSSION</a></li>
+                <li><a href="#queries">QUERIES</a></li>
+                <li><a href="#diagrams">DIAGRAMS</a></li>
+                <li><a href="#recordings">RECORDINGS</a></li>
+                <li><a href="#summary">SUMMARY</a></li>
             </ul>
         </nav>
+        </div>
 
         <hr>
 
@@ -46,11 +57,12 @@
 
     <main>
 
-        <h1>WELCOME TO FIRST MEETING RUNDOWN</h1>
+        <h1>FIRST MEETING RUNDOWN</h1>
 
+        <div class="boxes">
         <h3 id="attendance">Attendance</h3>
 
-        <ul>
+        <ul class="checklist">
             <li><input type="checkbox">Clarissa Gutierrez</li>
             <li><input type="checkbox">Yangchen (Dean) Zhao</li>
             <li><input type="checkbox">Zihang He</li>
@@ -61,14 +73,16 @@
             <li><input type="checkbox"><strong>Sashwat Nayak (lead)</strong></li>
             <li><input type="checkbox">Yan Ji</li>
             <li><input type="checkbox">Steven Liu</li>
-            <li><input type="checkbox"><strong><em>Ananya Dey (TA)</em></strong></li>
+            <li><input type="checkbox"><strong><em style="background-color:rgb(21, 93, 156);">Ananya Dey (TA)</em></strong></li>
         </ul>
+        </div>
 
+        <div class="boxes">
         <h3 id="agenda">Agenda</h3>
 
-        <p><strong>10 Minute Meeting</strong></p>
+        <p style="background-color:green;text-align: center;"><strong id="heading">10 Minute Meeting</strong></p>
 
-        <ol>
+        <ol class="topics">
             <li>Introduction by Ananya</li>
             <li>Attendance</li>
             <li>Project Rundown and Details</li>
@@ -77,20 +91,26 @@
             <li>See-off</li>
         </ol>
 
+        </div>
+
+        <div class="boxes">
         <h3 id="discussion">Discussion</h3>
 
-            <section>
-                <h4>Things Covered Previously</h4>
-                <span class="Discussion"><i>Resources</i>,</span>
-                <span class="Discussion"><i>Roles</i>,</span>
-                <span class="Discussion"><i>TA</i>,</span>
-                <span class="Discussion"><i>Lecture and Labs</i></span>
+        
+            <section style="background-color: green;">
+                <h4 style="font-size:60px; font-family: 'Roboto Condensed', sans-serif;color: white;text-align:center;">
+                    Things Covered Previously
+                </h4>
+                <span class="Discussion"><i class="inside">Resources</i></span>
+                <span class="Discussion"><i class="inside">Roles</i></span>
+                <span class="Discussion"><i class="inside">TA</i></span>
+                <span class="Discussion"><i class="inside">Lecture and Labs</i></span>
 
                 <br>
                 <br>
 
                 <hr>
-
+                <div class="previous">
                 <h5>Resources: </h5>
                 <p>
                     As discussed previously, this class has numerous
@@ -140,22 +160,24 @@
                 </p>
 
                 <hr>
+                </div>  
             </section>
+            
 
             <br>
 
-            <section>
-                <h4>New Things Covered</h4>
-                <span class="Discussion"><i>Group Meetings</i>,</span>
-                <span class="Discussion"><i>Expectations</i>,</span>
-                <span class="Discussion"><i>Project Details</i>,</span>
-                <span class="Discussion"><i>Deadlines</i></span>
+            <section style="background-color:green;">
+                <h4 style="font-size:60px; font-family: 'Roboto Condensed', sans-serif;color: white;text-align:center;">New Things Covered</h4>
+                <span class="Discussion"><i class="inside">Group Meetings</i></span>
+                <span class="Discussion"><i class="inside">Expectations</i></span>
+                <span class="Discussion"><i class="inside">Project Details</i></span>
+                <span class="Discussion"><i class="inside">Deadlines</i></span>
 
                 <br>
                 <br>
 
                 <hr>
-
+                <div class="now">
                 <h5>Group Meetings:</h5>
                 <p>
                     It is expected for the project group to have <strong> WEEKLY MEETINGS</strong> with each 
@@ -209,23 +231,32 @@
                 </p>
 
                 <hr>
+                </div>
+            
             </section>
+            </div>
+            
 
+        <div class="boxes">
         <h3 id="queries">Queries</h3>
 
             <div class="questions-raised">
                 <span class="Queries"><b><i>Questions Raised</i></b></span>
+                        <div class="b1">
                         <h5>What is the project about?</h5>
                         <p>
                             - As mentioned previously, the details of the project requirements are to be presented by the Professor,
                             who will discuss about the prompt, the resources and the expectations.
                         </p>
+                        </div>
 
+                        <div class="b1">
                         <h5>When will the details for the project come?</h5>
                         <p>
                             - It is expected for the rundown of the project to come this Friday (10/7/2022), and further details will
                             be presented as the course progresses.
                         </p>
+                        </div>
             </div>
         
         <div class="questions-you-have">
@@ -252,70 +283,78 @@
                     <a href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCKCBBpSPNPRwwnPsmgLHTmLfNSjDSKnMfgzXPmRFhZgHrVbzDdCpbbTqbmqDnzjPxLszqtL">s2nayak@ucsd.edu</a></li>
             </ul>
         </div>
+        </div>
         
+        <div class="boxes">
         <h3 id="diagrams">Diagrams</h3>
-
-            <p>Here are a few diagrams that will help understand this process better:</p>
-
-            <section>
-                <h4>Software Cycle</h4>
+            <div class="pics">
+            <p class="rec-header">Here are a few diagrams that will help understand this process better:</p>
+            
+            <section class="one">
+                <h4 class="pics">Software Cycle</h4>
                 <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/05/Software-Development-life-cycle-phases-700x375.jpg" alt="Software Development Life Cycle">
-                <p>
+                <p class="rec-header">
                     This image describes the process that will be deployed for the project, it is similar to the method
                     used in the real-industry, so it is best we mimick such a process in building our project. 
                 </p>
             </section>
 
-            <section>
-                <h4>Roles</h4>
+            <section class="two">
+                <h4 class="pics">Roles</h4>
                 <img src="https://cdn.discordapp.com/attachments/643279724566544395/1028467703612190780/20221008_171314.jpg" width="300" height="400" alt="Project Details and Roles Rundown">
-                <p>
+                <p class="rec-header">
                     This image details the roles of the group as well as the ideal direction of how the project is to be determined.
                 </p>
             </section>
                 
-            <section>
-                <h4>Resources</h4>
+            <section class="three">
+                <h4 class="pics">Resources</h4>
                 <img src="https://www.uab.edu/elearning/images/pictures/academic-technologies/logos/canvas.png" width="200" height="200" alt="Canvas Logo">
                 <img src="https://i.pcmag.com/imagery/reviews/07td46ju7p6lLVb0QGwc5VF-6.fit_lim.size_1050x591.v1569479844.jpg" width="350" height="200" alt="Slack Logo">
                 <img src="https://cdn.mos.cms.futurecdn.net/25UeWUrVGmuXUjnG6Yt7rj.jpg" width="400" height="250" alt="Zoom Logo">
-                <p>
+                <p class="rec-header">
                     These are the 3 main resources of communication and planning we will be utilizing.
                 </p>
             </section>
+            </div>
+            </div>
 
+        <div class="boxes">
         <h3 id="recordings">Recordings</h3>
 
-        <p>Here is a quick rundown of the Project with a video as well as an audio recording:</p>
+        <p class="rec-header">Here is a quick rundown of the Project with a video as well as an audio recording:</p>
 
-        <section>
-            <h4>30-Second Video</h4>
+        <section class ="rec-header">
+            <h4 class="rec-header">30-Second Video</h4>
             <video controls>
                 <source src="HTMLVideo.mp4" type="video/mp4">
             </video>
         </section>
 
-        <section>
-            <h4>Audio Recording</h4>
-            <audio controls src="HTMLRecording.mp3"></audio>
+        <section class ="rec-header">
+            <h4 class="rec-header">Audio Recording</h4>
+            <audio style="background-color: green;" controls src="HTMLRecording.mp3"></audio>
         </section>
+        </div>
 
+        <div class="boxes">
         <h3 id="summary">Summary</h3>
-            <details>
+            <details style="background-color:green;">
                 <summary>Quick Summary (TL;DR)</summary>
-                <p>
+                <p class="sum">
                     If you thought it was a long read, don't worry! I'll summarize the discussion of the meeting
                     here:
 
-                    Our project is made of 11 members, <b>2 GROUP LEADS</b>, <b> 8 DEVELOPERS</b> (who will be split into groups of two 
-                    for <i>SCHEDULING</i> and <i>PLANNING</i>) and <b><i>1 TA</i></b>. The project is to be develop in a similar fashion
-                    as per real-world industry standards. It is due by <b>FINALS WEEK</b>, but we are expected to have <b>WEEKLY</b> meetings
-                    to discuss progress and <b>DAILY</b> rundowns to share ideas and results. It is important to emphasize the element of <b>TEAMWORK</b>
+                    Our project is made of 11 members, <b class="color">2 GROUP LEADS</b>,<b class="color"> 8 DEVELOPERS</b> (who will be split into groups of two 
+                    for <i class="color">SCHEDULING</i> and <i class="color">PLANNING</i>) and <b><i class="color">1 TA</i></b>. The project is to be develop in a similar fashion
+                    as per real-world industry standards. It is due by <b class="color">FINALS WEEK</b>, but we are expected to have <b class="color">WEEKLY</b> meetings
+                    to discuss progress and <b class="color">DAILY</b> rundowns to share ideas and results. It is important to emphasize the element of <b class="color">TEAMWORK</b>
                     as this project will not be completed with partial participation, everyone has to do their part. We are expected to give about 
-                    <b>6 HOURS</b> per week for the project. <b><i>You will get in return whatever effort you put into this project</i></b>! For any 
+                    <b class="color">6 HOURS</b> per week for the project. <b><i class="color">You will get in return whatever effort you put into this project</i></b>! For any 
                     questions, please refer to the TA or the Project Leads through email or Slack. 
                 </p>
             </details>
+        </div>
 
     </main>
 
